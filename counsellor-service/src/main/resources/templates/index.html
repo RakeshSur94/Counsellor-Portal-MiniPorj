@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        /* Basic Reset */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 800px;
+            margin: 15px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading Styling */
+        h1 {
+            color: #FC8019;
+            margin-bottom: 20px;
+        }
+
+        /* Link Styling */
+        a {
+            text-decoration: none;
+            color: #FC8019;
+            font-size: 18px;
+            margin: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #FC8019;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #FC8019;
+            color: #fff;
+        }
+
+        /* Additional Styling */
+        .button-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome  Counsellor</h1>
+    <p>Please choose an option below to proceed:</p>
+    <div class="button-container">
+        <a th:href="@{/counsellor/login}">Login</a>
+        <a th:href="@{/counsellor/register}">Register</a>
+    </div>
+</div>
+</body>
+</html>
